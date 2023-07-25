@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Fruits</title>
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+
+    <!--tailwind and daisyui cdn link-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--lato google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+    
+</head>
+<body>
+    <!--header-->
+    <header>
+        <div class="mx-10 my-12">
+            <div class="navbar flex-row-reverse lg:flex-row gap-8 bg-white lg:bg-[#F85559] rounded-full">
+                <div class="navbar-start">
+                    <div class="flex-none hidden lg:block">
+                        <ul class="menu menu-horizontal px-1 text-white text-lg font-medium">
+                            <li><a class="hover:text-[#dfe4ea] hover:bg-transparent">Home</a></li>
+                            <li><a class="hover:text-[#dfe4ea] hover:bg-transparent">About Us</a></li>
+                            <li><a class="hover:text-[#dfe4ea] hover:bg-transparent">Shop</a></li>
+                            <li><a class="hover:text-[#dfe4ea] hover:bg-transparent">All Fruits</a></li>
+                        </ul>
+                    </div>
+                  <div class="dropdown lg:hidden">
+                    <label tabindex="0" class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-lg font-medium">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                  </div>
+
+                </div>
+                <div class="navbar-center flex gap-3">
+                    <img class="pl-10 lg:pl-0" src="./images/logo.png" alt="Fruits Logo">
+                    <p class="text-4xl text-[#121212] lg:text-white">Fresh Fruits</p>
+                </div>
+                <div class="navbar-end hidden lg:inline-flex">
+                  <input class="w-96 h-12 relative rounded-full pl-5 placeholder:text-[#12121266]" type="search" placeholder="Search here">
+                  <svg id="search" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 absolute mr-5 text-[#121212]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                </div>
+              </div>
+        </div>
+    </header>
+
+    <!--main-->
+    <main></main>
+
+    <!--footer-->
+</body>
+</html>
