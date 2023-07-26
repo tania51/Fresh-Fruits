@@ -17,6 +17,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
 
+    <!--font awesome kit-->
+    <script src="https://kit.fontawesome.com/ca20a3b49c.js" crossorigin="anonymous"></script>
+
     <!--custom css-->
     <style>
         body {
@@ -67,7 +70,7 @@
     <!--main-->
     <main>
         <!--banner slider section-->
-        <div class="px-10 relative">
+        <div class="px-10 lg:relative">
             <div class="carousel w-full">
                 <!--slider1-->
 
@@ -149,8 +152,8 @@
         </div>
 
         <!--banner-content-bottom-->
-        <div class="lg:max-w-[1196px] lg:max-h-[250px] flex justify-center">
-          <div class="absolute bottom-5 bg-white rounded-lg">
+        <div class="lg:max-w-[1196px] lg:max-h-[250px] hidden lg:flex justify-center">
+          <div class="lg:absolute bottom-5 bg-white rounded-lg">
             <div class="flex gap-20">
               <div>  
                 <img src="./images/fruit1.png" alt="Grapes">
@@ -177,9 +180,9 @@
         </div>
 
         <!--deal section-->
-        <section class="mt-20 px-10 pt-36 pb-12">
-          <div class="flex justify-between gap-96">
-            <div>
+        <section class="mt-20 px-10 pt-36 pb-8">
+          <div class="flex flex-col lg:flex-row justify-between lg:gap-96">
+            <div class="pb-5 lg:pb-0">
               <h3 class="text-[#121212] text-5xl font-extrabold pb-6">Deal of the day</h3>
               <p class="text-[#12121299] font-medium">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
             </div>
@@ -216,14 +219,14 @@
           <!--deal card-->
           <div class="py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 
-            <!--apples card-->
+            <!--apple card-->
             <div class="card border border-[#1212121a] rounded-lg">
               <figure class="px-10 pt-10">
                 <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
               </figure>
               <div class="card-body items-center text-center space-y-3">
                 <h2 class="card-title text-[#121212] text-2xl font-bold">12.90$ - 18.85$</h2>
-                <p class="text-[#12121299] font-medium">Apples</p>
+                <p class="text-[#12121299] font-medium">Apple</p>
                 <div class="rating">
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
                   <input type="radio" name="rating-2" class="mask mask-star-2  bg-[#F85559]" checked />
@@ -238,7 +241,7 @@
                   <dialog id="apple" class="modal modal-bottom sm:modal-middle">
                     <form method="dialog" class="modal-box px-14 py-10">
                       <img class="mx-auto mb-4" src="./images/fruit6.png" alt="">
-                      <h3 class="font-extrabold text-4xl">Apples</h3>
+                      <h3 class="font-extrabold text-4xl">Apple</h3>
                       <p class="py-4 text-[#12121299] font-medium">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
 
                       <div class="rating">
@@ -261,14 +264,14 @@
               </div>
             </div>
             
-            <!--Oranges card-->
+            <!--Orange card-->
             <div class="card border border-[#1212121a] rounded-lg">
               <figure class="px-10 pt-10">
                 <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl" />
               </figure>
               <div class="card-body items-center text-center space-y-3">
                 <h2 class="card-title text-[#121212] text-2xl font-bold">12.90$ - 18.85$</h2>
-                <p class="text-[#12121299] font-medium">Oranges</p>
+                <p class="text-[#12121299] font-medium">Orange</p>
                 <div class="rating">
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
                   <input type="radio" name="rating-2" class="mask mask-star-2  bg-[#F85559]" checked />
@@ -283,7 +286,7 @@
                   <dialog id="orange" class="modal modal-bottom sm:modal-middle">
                     <form method="dialog" class="modal-box px-14 py-10">
                       <img class="mx-auto mb-4" src="./images/fruit7.png" alt="">
-                      <h3 class="font-extrabold text-4xl">Oranges</h3>
+                      <h3 class="font-extrabold text-4xl">Orange</h3>
                       <p class="py-4 text-[#12121299] font-medium">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
 
                       <div class="rating">
@@ -393,6 +396,96 @@
                   </dialog>
 
                 </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex justify-center">
+            <button class="btn bg-[#F85559] text-white text-xl font-extrabold border-none rounded-lg">Shop Now</button>
+          </div>
+        </section>
+
+        <!--team section-->
+        <section>
+          <div class="px-10 lg:my-12">
+            <div class="carousel-item relative lg:w-full lg:h-[690px] bg-[url('./images/team.png')]">
+              <div class="hero-overlay bg-opacity-60 items-center lg:items-start lg:pt-28 justify-center">
+                  <div class="hero-content text-center text-neutral-content">
+                      <div class="max-w-lg">
+                      <h2 class="mb-5 text-white text-5xl font-extrabold">Meet the team section</h2>
+                      <p class="mb-5 text-white font-medium">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                      </div>
+                  </div>
+
+                  <!--team card-->
+                  <div class="py-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-20">
+
+                    <!--team member1 card-->
+                    <div class="card border border-[#1212121a] rounded-lg">
+                      <figure class="px-10 pt-5">
+                        <img src="./images/member1.png" alt="" class="rounded-xl" />
+                      </figure>
+                      <div class="card-body items-center text-center">
+                        <h2 class="card-title text-white text-2xl font-bold">Awlad Hossain</h2>
+                        <p class="text-white font-medium pb-1">Fruits Expert</p>
+                        <div class="flex gap-3">
+                          <img src="./images/facebook.svg" alt="Facebook">
+                          <img src="./images/twitter.svg" alt="Twitter">
+                          <img src="./images/linkedin.svg" alt="Linkedin">
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--team member2 card-->
+                    <div class="card border border-[#1212121a] rounded-lg">
+                      <figure class="px-10 pt-5">
+                        <img src="./images/member2.png" alt="" class="rounded-xl" />
+                      </figure>
+                      <div class="card-body items-center text-center">
+                        <h2 class="card-title text-white text-2xl font-bold">Safia Chowdhury</h2>
+                        <p class="text-white font-medium pb-1">Fruits Expert</p>
+                        <div class="flex gap-3">
+                          <img src="./images/facebook.svg" alt="Facebook">
+                          <img src="./images/twitter.svg" alt="Twitter">
+                          <img src="./images/linkedin.svg" alt="Linkedin">
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <!--team member3 card-->
+                    <div class="card border border-[#1212121a] rounded-lg">
+                      <figure class="px-10 pt-5">
+                        <img src="./images/member3.png" alt="" class="rounded-xl" />
+                      </figure>
+                      <div class="card-body items-center text-center">
+                        <h2 class="card-title text-white text-2xl font-bold">Rokib Hossain</h2>
+                        <p class="text-white font-medium pb-1">Fruits Expert</p>
+                        <div class="flex gap-3">
+                          <img src="./images/facebook.svg" alt="Facebook">
+                          <img src="./images/twitter.svg" alt="Twitter">
+                          <img src="./images/linkedin.svg" alt="Linkedin">
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <!--team 4 card-->
+                    <div class="card border border-[#1212121a] rounded-lg">
+                      <figure class="px-10 pt-5">
+                        <img src="./images/member4.png" alt="" class="rounded-xl" />
+                      </figure>
+                      <div class="card-body items-center text-center">
+                        <h2 class="card-title text-white text-2xl font-bold">Chaity</h2>
+                        <p class="text-white font-medium pb-1">Fruits Expert</p>
+                        <div class="flex gap-3">
+                          <img src="./images/facebook.svg" alt="Facebook">
+                          <img src="./images/twitter.svg" alt="Twitter">
+                          <img src="./images/linkedin.svg" alt="Linkedin">
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  
               </div>
             </div>
           </div>
