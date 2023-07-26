@@ -17,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
 
+    <!--custom css-->
     <style>
         body {
             font-family: 'Lato', sans-serif;
@@ -27,7 +28,7 @@
 <body>
     <!--header-->
     <header>
-        <div class="mx-10 my-12">
+        <div class="px-10 my-12">
             <div class="navbar flex-row-reverse lg:flex-row gap-8 bg-white lg:bg-[#F85559] rounded-full">
                 <div class="navbar-start">
                     <div class="flex-none hidden lg:block">
@@ -64,7 +65,89 @@
     </header>
 
     <!--main-->
-    <main></main>
+    <main>
+        <!--banner slider section-->
+        <div class="px-10">
+            <div class="carousel w-full">
+                <!--slider1-->
+
+                <div id="slide1" class="carousel-item relative w-full h-[600px] bg-[url('/images/banner1.png')]">
+                    <div class="hero-overlay bg-opacity-60 flex items-center lg:items-start lg:pt-16 justify-center">
+                        <div class="hero-content text-center text-neutral-content">
+                            <div class="max-w-lg">
+                            <h1 class="mb-5 text-white text-7xl font-extrabold">Exotic tastes at your doorstep</h1>
+                            <p class="mb-5 text-white text-xl font-medium">We supply highly quality organic products</p>
+                            <button class="btn bg-[#F85559] hover:bg-[#EA2027] text-white text-xl font-extrabold border-none rounded-lg">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                  
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle text-white bg-[#121212] hover:bg-[#1e272e] border-none">❮</a> 
+                    <a href="#slide2" class="btn btn-circle text-white bg-[#121212] hover:bg-[#1e272e] border-none">❯</a>
+                  </div>
+                </div>
+                
+                
+                <!--slider2-->
+                <div id="slide2"class="carousel-item relative w-full h-[600px] bg-[url('/images/banner2.png')]">
+                  <div class="hero-overlay bg-opacity-60 flex items-center lg:items-start lg:pt-16 justify-center">
+                    <div class="hero-content text-center text-neutral-content">
+                        <div class="max-w-lg">
+                        <h1 class="mb-5 text-white text-7xl font-extrabold">Exotic tastes at your doorstep</h1>
+                        <p class="mb-5 text-white text-xl font-medium">We supply highly quality organic products</p>
+                        <button class="btn bg-[#F85559] text-white text-xl font-extrabold border-none rounded-lg">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle text-white bg-[#121212] hover:bg-[#1e272e] border-none">❮</a> 
+                    <a href="#slide3" class="btn btn-circle text-white bg-[#121212] hover:bg-[#1e272e] border-none">❯</a>
+                  </div>
+                </div> 
+
+                <!--slider3-->
+                <div id="slide3"class="carousel-item relative w-full h-[600px] bg-[url('/images/banner3.png')]">
+                  <div class="hero-overlay bg-opacity-60 flex items-center lg:items-start lg:pt-16 justify-center">
+                    <div class="hero-content text-center text-neutral-content">
+                        <div class="max-w-lg">
+                        <h1 class="mb-5 text-white text-7xl font-extrabold">Exotic tastes at your doorstep</h1>
+                        <p class="mb-5 text-white text-xl font-medium">We supply highly quality organic products</p>
+                        <button class="btn bg-[#F85559] text-white text-xl font-extrabold border-none rounded-lg">Shop Now</button>
+                        </div>
+                    </div>
+                  </div>
+
+
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle text-white bg-[#121212] hover:bg-[#1e272e] border-none">❮</a> 
+                    <a href="#slide4" class="btn btn-circle text-white bg-[#121212] hover:bg-[#1e272e] border-none">❯</a>
+                  </div>
+                </div>
+                
+                <!--slider4-->
+                <div id="slide4" class="carousel-item relative w-full h-[600px] bg-[url('/images/banner4.png')]">
+
+                  <div class="hero-overlay bg-opacity-60 flex items-center lg:items-start lg:pt-16 justify-center">
+                    <div class="hero-content text-center text-neutral-content">
+                        <div class="max-w-lg">
+                        <h1 class="mb-5 text-white text-7xl font-extrabold">Exotic tastes at your doorstep</h1>
+                        <p class="mb-5 text-white text-xl font-medium">We supply highly quality organic products</p>
+                        <button class="btn bg-[#F85559] text-white text-xl font-extrabold border-none rounded-lg">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle text-white bg-[#121212] hover:bg-[#1e272e] border-none">❮</a> 
+                    <a href="#slide1" class="btn btn-circle text-white bg-[#121212] hover:bg-[#1e272e] border-none">❯</a>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <!--footer-->
 </body>
